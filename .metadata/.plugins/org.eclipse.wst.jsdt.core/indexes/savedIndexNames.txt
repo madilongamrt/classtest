@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+/Users/mac/eclipse-workspace/classtest/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2503446734.index
+2289277306.index
+3152074131.index
+2851277812.index
+560224388.index

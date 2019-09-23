@@ -1,0 +1,41 @@
+package controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ManagedProperty;
+import javax.faces.bean.SessionScoped;
+
+import model.Transaction;
+
+@ManagedBean(name = "transactioncontroller")
+@SessionScoped
+public class TransactionController {
+	
+	@ManagedProperty(value="#{transaction}")
+    private Transaction transaction;
+	
+	private List<Transaction> transactionList = new ArrayList<>();
+  	
+ 	 public List<Transaction> getEmployeeList() {
+        // transactionList = transactionEJB.findTransactions();
+         return transactionList;
+     }
+ 	 
+	
+	public String addNewTransation() {
+  		//transactionEJB.addNew(transaction.getEntity());
+     //  transactionList = transactionEJB.findTransactions();
+       return "transactionList.xhtml";
+   }
+	
+	public Transaction getTransaction() {
+		return transaction;
+	}
+
+	public void setEmployee(Transaction transaction) {
+		this.transaction = transaction;
+	} 
+
+}
